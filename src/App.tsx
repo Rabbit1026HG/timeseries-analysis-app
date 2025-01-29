@@ -31,7 +31,7 @@ function App() {
 
     try {
       const response = await axios.get(
-        "https://b861-88-198-67-119.ngrok-free.app/predict",
+        import.meta.env.VITE_API_URL,
         {
           headers: {
             "ngrok-skip-browser-warning": "true",
